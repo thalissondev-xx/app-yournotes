@@ -1,8 +1,6 @@
 # Your Notes
 
-With this application android you can register offline notes with facility. This app was made for studies the new APIs android.
-
-APIs used:
+With this android application you can register offline notes with facility. This app was made for studies the new APIs android.
 
 * Kotlin
 * Retrofit

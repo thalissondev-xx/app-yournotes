@@ -1,4 +1,4 @@
-package br.com.yournotes.notes.main
+package br.com.yournotes.notes.activityies.main
 
 import android.support.v7.app.AlertDialog
 

@@ -1,4 +1,4 @@
-package br.com.yournotes.notes.addnote
+package br.com.yournotes.notes.activityies.addnote
 
 import android.content.Intent
 import android.os.Bundle

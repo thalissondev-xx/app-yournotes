@@ -1,4 +1,4 @@
-package br.com.yournotes.notes.main
+package br.com.yournotes.notes.activityies.main
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
@@ -7,7 +7,7 @@ import android.support.v7.app.AlertDialog
 import android.view.Menu
 import android.view.MenuItem
 import br.com.yournotes.R
-import br.com.yournotes.notes.addnote.AddNote
+import br.com.yournotes.notes.activityies.addnote.AddNote
 
 class NotesActivity : AppCompatActivity(), NotesView {
 
