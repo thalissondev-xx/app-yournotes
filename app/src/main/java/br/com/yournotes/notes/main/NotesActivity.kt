@@ -1,11 +1,13 @@
 package br.com.yournotes.notes.main
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.app.AlertDialog
 import android.view.Menu
 import android.view.MenuItem
 import br.com.yournotes.R
+import br.com.yournotes.notes.addnote.AddNote
 
 class NotesActivity : AppCompatActivity(), NotesView {
 
@@ -24,6 +26,11 @@ class NotesActivity : AppCompatActivity(), NotesView {
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        when (item?.itemId) {
+            R.id.add_note ->
+                    startActivity(Intent(this, AddNote::class.java))
+        }
+
         return super.onOptionsItemSelected(item)
     }
 

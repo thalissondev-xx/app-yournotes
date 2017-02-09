@@ -5,14 +5,8 @@
 
     <item
         android:title="Search Note"
-        android:id="@+id/search_note"
-        android:icon="@drawable/search"
-        app:showAsAction="ifRoom"/>
-
-    <item
-        android:title="Add Note"
-        android:id="@+id/add_note"
-        android:icon="@drawable/add"
+        android:id="@+id/check_note"
+        android:icon="@drawable/check"
         app:showAsAction="ifRoom"/>
 
 </menu>

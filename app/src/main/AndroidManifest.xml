@@ -20,6 +20,10 @@
 
         </activity>
 
+        <activity
+            android:name=".notes.addnote.AddNote"
+            android:label="@string/add_your_note"/>
+
     </application>
 
 </manifest>
