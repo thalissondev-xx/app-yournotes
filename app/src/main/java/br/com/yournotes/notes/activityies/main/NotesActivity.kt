@@ -9,7 +9,7 @@ import android.view.MenuItem
 import br.com.yournotes.R
 import br.com.yournotes.notes.activityies.addnote.AddNote
 
-class NotesActivity : AppCompatActivity(), NotesView {
+class NotesActivity : AppCompatActivity(), NotesMVP.View {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
