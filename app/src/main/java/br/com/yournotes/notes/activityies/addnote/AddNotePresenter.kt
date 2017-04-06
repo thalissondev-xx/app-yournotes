@@ -12,7 +12,7 @@ import javax.inject.Inject
  * Created by thalissonestrela on 2/8/17.
  */
 class AddNotePresenter @Inject constructor(
-        val view: AddMVP.View, val interactor: AddNoteInteractor): Observer<RegisterNoteResult> {
+        val view: AddMVP.View, val interactor: AddNoteInteractor): Observer<Boolean> {
 
     fun requestSaveNote(note: Note, context: Context) {
         var validateResult: ValidateResult = validateNote(note)
@@ -37,7 +37,7 @@ class AddNotePresenter @Inject constructor(
         return ValidateResult(true, "It's ok")
     }
 
-    override fun onNext(t: RegisterNoteResult?) {
+    override fun onNext(t: Boolean?) {
         Log.i("Notes", "rowId: " + t)
     }
 

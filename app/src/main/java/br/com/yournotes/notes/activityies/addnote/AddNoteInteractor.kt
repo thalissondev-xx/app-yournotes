@@ -2,9 +2,8 @@ package br.com.yournotes.notes.activityies.addnote
 
 import android.content.Context
 import br.com.yournotes.notes.activityies.addnote.models.Note
-import br.com.yournotes.notes.activityies.addnote.models.RegisterNoteResult
-import br.com.yournotes.notes.activityies.addnote.utils.InsertNote
 import br.com.yournotes.notes.repository.NotesDbHelper
+import br.com.yournotes.notes.repository.NotesUtils
 import rx.Observer
 
 /**
@@ -12,9 +11,9 @@ import rx.Observer
  */
 class AddNoteInteractor: AddMVP.Interactor {
 
-    fun saveData(note: Note, context: Context, observer: Observer<RegisterNoteResult>) {
+    fun saveData(note: Note, context: Context, observer: Observer<Boolean>) {
 
-        InsertNote(NotesDbHelper(context)).insert(note)
+        NotesUtils(NotesDbHelper(context)).insert(note)
                 .subscribe(observer)
 
     }
