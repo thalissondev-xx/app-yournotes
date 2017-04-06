@@ -10,7 +10,7 @@ import br.com.yournotes.R
 /**
  * Created by thalissonestrela on 2/8/17.
  */
-class AddNote : AppCompatActivity() {
+class AddNoteActivity : AppCompatActivity(), AddMVP.View {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,6 +18,18 @@ class AddNote : AppCompatActivity() {
 
         // Show the button back for the previous activity
         // actionBar.setDisplayHomeAsUpEnabled(true)
+    }
+
+    override fun showLoading() {
+
+    }
+
+    override fun hideLoading() {
+
+    }
+
+    override fun saveNote() {
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -28,7 +40,7 @@ class AddNote : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         when (item?.itemId) {
             R.id.check_note ->
-                startActivity(Intent(this, AddNote::class.java))
+                startActivity(Intent(this, AddNoteActivity::class.java))
         }
 
         return super.onOptionsItemSelected(item)

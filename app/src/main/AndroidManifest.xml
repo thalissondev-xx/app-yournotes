@@ -21,7 +21,7 @@
         </activity>
 
         <activity
-            android:name=".notes.activityies.addnote.AddNote"
+            android:name=".notes.activityies.addnote.AddNoteActivity"
             android:label="@string/add_your_note"/>
 
     </application>

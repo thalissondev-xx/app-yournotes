@@ -10,11 +10,34 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:scrollbars="none">
 
-    <EditText
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:hint="Enter with your note..."
-        android:background="@android:color/transparent"
-        android:gravity="left|top"/>
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="Enter with your title"
+            android:maxLines="1"/>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#CCC"/>
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter with your note"
+            android:background="@android:color/transparent"
+            android:gravity="left|top"/>
+
+    </LinearLayout>
 
 </ScrollView>
