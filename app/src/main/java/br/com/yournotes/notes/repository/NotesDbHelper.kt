@@ -18,7 +18,7 @@ class NotesDbHelper(context: Context): SQLiteOpenHelper(context, "Notes.db", nul
                     " (" + BaseColumns._ID + " INTEGER PRIMARY KEY," +
                     NotesContract.NotesEntry().COLUMN_TITLE + TEXT_TYPE + COMMA_SEP +
                     NotesContract.NotesEntry().COLUMN_DESCRIPTION + TEXT_TYPE + COMMA_SEP +
-                    NotesContract.NotesEntry().COLUMN_TIMESTAMP + TEXT_TYPE + COMMA_SEP + ")"
+                    NotesContract.NotesEntry().COLUMN_TIMESTAMP + " DATETIME DEFAULT CURRENT_TIMESTAMP)"
 
     // Delete the table
     val SQL_DELETE_ENTRIES: String = "DROP TABLE IF EXISTS " + NotesContract.NotesEntry().TABLE_NAME

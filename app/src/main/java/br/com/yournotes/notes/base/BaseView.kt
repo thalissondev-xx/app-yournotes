@@ -6,4 +6,5 @@ package br.com.yournotes.notes.base
 interface BaseView {
     fun showLoading()
     fun hideLoading()
+    fun showError(msg: String)
 }

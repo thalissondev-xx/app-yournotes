@@ -5,6 +5,5 @@ package br.com.yournotes.notes.activityies.addnote.models
  */
 data class Note (
         var title: String,
-        var description: String,
-        var timestamp: String
+        var description: String
 )
