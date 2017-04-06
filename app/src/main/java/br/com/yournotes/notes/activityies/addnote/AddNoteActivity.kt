@@ -49,7 +49,7 @@ class AddNoteActivity : AppCompatActivity(), AddMVP.View {
     override fun saveNote() {
         presenter.requestSaveNote(Note(
                 etTitle.text.toString(), etDescription.text.toString()
-        ))
+        ), this)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

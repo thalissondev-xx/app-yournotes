@@ -1,5 +1,7 @@
 package br.com.yournotes.notes.activityies.addnote
 
+import android.content.Context
+import android.util.Log
 import br.com.yournotes.notes.activityies.addnote.models.Note
 import br.com.yournotes.notes.activityies.addnote.models.RegisterNoteResult
 import br.com.yournotes.notes.activityies.addnote.models.ValidateResult
@@ -12,12 +14,12 @@ import javax.inject.Inject
 class AddNotePresenter @Inject constructor(
         val view: AddMVP.View, val interactor: AddNoteInteractor): Observer<RegisterNoteResult> {
 
-    fun requestSaveNote(note: Note) {
+    fun requestSaveNote(note: Note, context: Context) {
         var validateResult: ValidateResult = validateNote(note)
 
         // Is valid?
         if (validateResult.status) {
-            interactor.saveData(note)
+            interactor.saveData(note, context, this)
         } else {
             view.showError(validateResult.msg)
         }
@@ -36,15 +38,15 @@ class AddNotePresenter @Inject constructor(
     }
 
     override fun onNext(t: RegisterNoteResult?) {
-
+        Log.i("Notes", "rowId: " + t)
     }
 
     override fun onCompleted() {
-
+        Log.i("Notes", "onCompleted")
     }
 
     override fun onError(e: Throwable?) {
-
+        Log.i("Notes", "onError: " + e?.message)
     }
 
 }
