@@ -8,7 +8,7 @@ import br.com.yournotes.notes.activityies.addnote.models.Note
 import rx.Observable
 
 /**
- * Created by Fretebras Android Team on 4/6/17.
+ * Created by thalissonestrela on 4/6/17.
  */
 class NotesUtils(var helper: NotesDbHelper) {
 
