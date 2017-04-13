@@ -3,7 +3,6 @@ package br.com.yournotes.notes.activityies.addnote
 import android.content.Context
 import android.util.Log
 import br.com.yournotes.notes.activityies.addnote.models.Note
-import br.com.yournotes.notes.activityies.addnote.models.RegisterNoteResult
 import br.com.yournotes.notes.activityies.addnote.models.ValidateResult
 import rx.Observer
 import javax.inject.Inject

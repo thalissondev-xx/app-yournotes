@@ -1,7 +1,7 @@
-package br.com.yournotes.notes.activityies.main.injection.components
+package br.com.yournotes.notes.activityies.main.injection
 
 import br.com.yournotes.notes.activityies.main.NotesInteractor
-import br.com.yournotes.notes.activityies.main.injection.modules.NotesModule
+import br.com.yournotes.notes.activityies.main.injection.NotesModule
 import dagger.Component
 import javax.inject.Singleton
 

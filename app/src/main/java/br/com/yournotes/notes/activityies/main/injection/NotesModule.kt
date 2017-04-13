@@ -1,4 +1,4 @@
-package br.com.yournotes.notes.activityies.main.injection.modules
+package br.com.yournotes.notes.activityies.main.injection
 
 import dagger.Module
 
